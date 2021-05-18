@@ -15,13 +15,6 @@ namespace AppX
 
             DependencyService.Register<MockDataStore>();
             MainPage = new AppShell();
-
-            int count = 0;
-            void Button_Clicked(object sender, System.EventArgs e)
-            {
-                count++;
-                ((Button)sender).Text = $"You clicked {count} times.";
-            }
         }
 
         protected override void OnStart()
